@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasses</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aqua;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px rgba(0, 58, 58, 0.726);
+            width: 700px;
+            margin: auto;
+        }
+
+        div {
+            color: red;
+        }
+        
+        div > p {
+            display: none;
+            color: blue;
+        }
+
+        div:hover > p {
+            display: block;
+            background-color: brown;
+            width: 300px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Exemplo de pseudoclasses</h1>
+        <h2>Exemplo de Hover</h2>
+        <p>Passe o mouse sobre o texto abaixo</p>
+        <div>
+            Passe o mouse aqui
+            <p>
+                TEXTO ESCONDIDO...
+            </p>
+        </div>
+        <p>fim do exemplo</p>
+    </main>
+</body>
+</html>
