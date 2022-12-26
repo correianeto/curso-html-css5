@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            width: 400px;
+            height: 150px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            background-color: rgb(173, 173, 173);
+            color: black;
+            font-variant: small-caps;
+            padding: 8px;
+            font-weight: bold;
+            border-radius: 7px 7px 0 0;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        td, th {
+            border: 2px solid black;
+            padding: 8px;
+        }
+
+        .num {
+            text-align: right;
+        }
+
+        .pint {
+            background-color: gray;
+            color: white;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Tabelas</h1>
+    <table>
+        <caption>População Brasileira</caption>
+        <thead>
+            <tr class="pint">
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">21 656 301</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">12 777 959</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">5 178 959</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">4 056 323</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr class="pint">
+                <th scope="row">Total</th>
+                <td class="num">43 668 714</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ex nostrum voluptatum dicta dolorem quisquam voluptatem asperiores beatae magnam enim doloremque facilis, vero animi sed similique exercitationem laboriosam quas! Aspernatur. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea omnis eius obcaecati pariatur soluta amet eligendi, facilis excepturi reiciendis impedit, repellat explicabo? Accusantium pariatur temporibus voluptate saepe hic, necessitatibus numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quaerat aliquam eligendi delectus voluptates sed, nostrum, quae officiis sequi porro non animi praesentium! Voluptatem repellendus aliquid, minus quis rerum perspiciatis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia quo velit repellendus cum quibusdam consequatur voluptatum vitae accusamus quaerat nisi. Temporibus, quis! Sunt dolores ad dolorem numquam delectus sequi sit.</p>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ex nostrum voluptatum dicta dolorem quisquam voluptatem asperiores beatae magnam enim doloremque facilis, vero animi sed similique exercitationem laboriosam quas! Aspernatur. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea omnis eius obcaecati pariatur soluta amet eligendi, facilis excepturi reiciendis impedit, repellat explicabo? Accusantium pariatur temporibus voluptate saepe hic, necessitatibus numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quaerat aliquam eligendi delectus voluptates sed, nostrum, quae officiis sequi porro non animi praesentium! Voluptatem repellendus aliquid, minus quis rerum perspiciatis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia quo velit repellendus cum quibusdam consequatur voluptatum vitae accusamus quaerat nisi. Temporibus, quis! Sunt dolores ad dolorem numquam delectus sequi sit.</p>
+</body>
+</html>
