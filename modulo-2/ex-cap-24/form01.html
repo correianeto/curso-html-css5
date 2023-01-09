@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Teste de formulários</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form method="get" autocomplete="on">
         <fieldset>
             <legend>Dados Pessoais</legend>
             <p>
@@ -51,6 +51,65 @@
         <fieldset>
             <legend>Arquivos</legend>
             <label for="iarq">Envio de Arquivos</label> <input type="file" name="arq" id="iarq">
+        </fieldset> <br>
+        <fieldset>
+            <legend>Select</legend>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                <option value="Esc" checked>-- Escolha uma opção --</option>
+                <optgroup label="Região Nordeste">
+                    <option value="CE">Ceará</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="ES">Espírito Santo</option>
+                </optgroup>
+            </select>
+        </fieldset> <br>
+        <fieldset>
+            <legend>DataList</legend>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="list">
+            <datalist name="list" id="list">
+                <option value="">Administrador</option>
+                <option value="">Professor</option>
+                <option value="">Enfermeira</option>
+                <option value="">Médica</option>
+            </datalist>
+        </fieldset><br>
+        <fieldset>
+            <legend>Text Area</legend>
+            <label for="imsg">Mensagem:</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Sua mensagem..."></textarea>
+        </fieldset> <br>
+        <fieldset>
+            <legend>Output</legend>
+            <p>
+                <label for="in1">Número 1:</label>
+                <input type="number" name="numero1" id="in1" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            </p>
+            <p>
+                <label for="in2">Número 2:</label>
+                <input type="number" name="numero2" id="in2" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            </p>
+            <p>
+                <label for="isoma">Soma:</label>
+                <output name="soma" id="isoma"></output> <br>
+            </p>
+           <P><p></p></P>
+            <p>
+                <p>
+                    <label for="iano">Em que ano você nasceu?</label>
+                    <input type="number" name="ano" id="iano" min="1960" max="2023" placeholder="Ano" value="2000" oninput="idade.innerHTML = Number(2023) - Number(iano.value)">
+                </p>
+                <p>
+                    <label for="iidade">Sua idade é:</label>
+                    <output id="idade"></output>
+                </p>
+            </p>
         </fieldset>
         <p>
             <input type="submit" name="enviar" id="enviar">
